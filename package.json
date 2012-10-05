@@ -1,9 +1,9 @@
 {
   "name": "n0d3-heroku",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Heroku for n0d3",
   "homepage": "https://github.com/gsf/n0d3-heroku",
-  "author" : "Gabriel Farrell <g@grrawr.com>",
+  "author": "Gabriel Farrell <g@grrawr.com>",
   "contributors": [
     "Matt McManus <mattmcmanus@gmail.com>"
   ],
