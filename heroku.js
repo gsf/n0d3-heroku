@@ -8,7 +8,7 @@ module.exports = function heroku (room, log) {
   }).listen(process.env.PORT);
 
   // Ping yourself every 5 minutes to keep dyno alive
-  setTimeout(function(){
+  setInterval(function(){
     http.get(process.env.HEROKU, function(res) {})
   }, 300000)
 
