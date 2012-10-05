@@ -1,0 +1,12 @@
+{
+  "name": "n0d3-heroku",
+  "version": "0.0.1",
+  "description": "Heroku for n0d3",
+  "homepage": "https://github.com/gsf/n0d3-heroku",
+  "author" : "Gabriel Farrell <g@grrawr.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsf/n0d3-heroku.git"
+  },
+  "main": "heroku.js"
+}
