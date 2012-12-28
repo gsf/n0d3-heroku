@@ -1,6 +1,12 @@
 var http = require('http');
 
 module.exports = function heroku (client) {
+  // Short circuit on missing env var
+  if (!process.env.HEROKU) {
+    console.warn('No HEROKU environment variable present');
+    return;
+  }
+
   // Create a local webserver
   http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
