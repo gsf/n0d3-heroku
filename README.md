@@ -6,7 +6,7 @@ A Heroku keepalive plugin for n0d3
 ## Usage ##
 From the terminal:
 
-    heroku config:add HEROKU=<heroku url>
+    heroku config:set HEROKU=<heroku url>
 
 From within your n0d3 bot:
 
