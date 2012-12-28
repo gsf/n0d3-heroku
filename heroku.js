@@ -1,6 +1,6 @@
 var http = require('http');
 
-module.exports = function heroku (client, bot) {
+module.exports = function heroku (client) {
   // Create a local webserver
   http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -9,9 +9,9 @@ module.exports = function heroku (client, bot) {
 
   // Ping yourself every 5 minutes to keep dyno alive
   setInterval(function(){
-    bot.log('Pinging myself');
+    console.log('Pinging myself');
     http.get(process.env.HEROKU, function(res) {})
   }, 300000)
 
-  bot.log('Self-awareness server running');
+  console.log('Self-awareness server running');
 };
